@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+body {
+  padding: 20px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.todo-new {
+  font-size: calc(10px + 1vw);
+}
+
+.todo-new .todo-input {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  margin-right: 10px;
+  font-size: calc(10px + 1vw);
+  border-radius: 2px;
+}
+
+.todo-new .todo-btn-dodaj {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: calc(10px + 1vw);
+  border-radius: 2px;
+}
+
+.todo-container {
+  background-color: rgba(216, 179, 59, 0.9);
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+  font-size: calc(10px + 1vw);
+  margin: 20px 0;
+  border-radius: 0 0 15px 15px;
+}
+
+.todo-container .todo-list {
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+
+.todo-container .todo-list > li {
+  width: 100%;
+  border-bottom: dotted 1px;
+}
+
+.todo-container .todo-list > li:last-of-type {
+  border-bottom: none;
+  border-radius: 0 0 15px 15px;
+}
+
+.todo-container .todo-list > li .todo-tick {
+  font-weight: bold;
+  padding: 8px;
+  min-height: calc(10px + 1vw);
+  color: green;
+}
+
+.todo-container .todo-list > li .have-tick {
+  background: green center center/contain no-repeat;
+}
+
+.todo-container .todo-list > li .todo-delete {
+  font-weight: bold;
+  padding: 8px;
+  min-height: calc(10px + 1vw);
+  color: red;
+}
+
+#li-template {
+  display: none;
+}
+
+.item-done {
+  text-decoration: line-through;
+}
+
+.li-done {
+  background-color: rgba(0, 189, 0, 0.8);
+}
+/*# sourceMappingURL=style.css.map */

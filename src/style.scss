@@ -1,0 +1,101 @@
+@import './variables';
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+}
+
+body {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.todo-new {
+    font-size: $todoFont;
+
+    .todo-input {
+        flex: 5;
+        margin-right: 10px;
+        font-size: $todoFont;
+        border-radius: 2px;
+    }
+
+    .todo-btn-dodaj {
+        flex: 1;
+        font-size: $todoFont;
+        border-radius: 2px;
+    }
+}
+
+.todo-container {
+    background-color: $backColor;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.7);
+    font-size: $todoFont;
+    margin: 20px 0;
+    border-radius: 0 0 15px 15px;
+
+    .todo-list {
+        list-style-type: none;
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+
+        > li {
+            width: 100%;
+            border-bottom: dotted 1px;
+
+            &:last-of-type {
+                border-bottom: none;
+                border-radius: 0 0 15px 15px;
+            }
+
+            .todo-tick {
+                font-weight: bold;
+                padding: 8px;
+                min-height: $todoFont;
+                color: $tickColor;
+            }
+
+            .have-tick {
+                background: green center center/contain no-repeat;
+            }
+
+            .todo-delete {
+                font-weight: bold;
+                padding: 8px;
+                min-height: $todoFont;
+                color: $deleteColor;
+            }
+        }
+        
+    }
+}
+
+#li-template {
+    display: none;
+}
+
+.item-done {
+    text-decoration: line-through;
+}
+
+.li-done {
+    background-color: rgba(0,189,0,0.8);
+}
