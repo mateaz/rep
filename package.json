@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "rt": "0.0.1",
     "rt-flow-js": "^2.11.2"
   },
   "devDependencies": {
